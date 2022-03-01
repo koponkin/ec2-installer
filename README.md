@@ -17,7 +17,7 @@ This repo contains the terraform files in order to rollout micro instance of ec2
 
 4. Generate ssh key pair: `ssh-keygen -f london-region-key-pair`. Note that the script expects the pair and scripts in the same folder.
 <img width="695" alt="image" src="https://user-images.githubusercontent.com/23727888/156251318-317e83c7-b76f-47d8-b455-0a497a7e6beb.png">
-
+5. Set creds to `access_key` and `secret_key` in `provider.tf` file.
 6. Generate the plan: `terraform plan -out terraform.out`
 7. Apply the plan: `terraform apply terraform.out`
 
